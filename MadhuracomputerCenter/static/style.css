@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans", sans-serif;
+    font-family:Gilroy-Regular, "Noto Sans", sans-serif;
 }
 
 .nav{
@@ -66,14 +66,75 @@
 
 .container{
     display: flex;
+    margin-top: 20px;
 }
 
 .box1{
     display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.box1 h3{
+    position: relative;
+    top: -120px;
+    font-size: 15px;
+    font-weight: 250;
+}
+.box1 h1{
+    position: relative;
+    top: -120px;
+    font-size: 35px;
+}
+#learn-btn{
+    position: relative;
+    top:-80px;
+    border: none;
+    background-color: #5c00b3;
+    border-radius: 45px;
+    height: 3em;
+    width: 10em;
+    color:white;
+    font-size: 20px;
+    box-shadow: 7px 7px 15px -3px black;
+}
+
+.box2{
+    display: flex;
     width: 50vw;
     height: 100vh;
 }
-.box2{
+
+#mkcl-logo{
+    position: relative;
+    top: -100px;
+    height: 10em;
+    width: 11em;
+    margin-bottom: 21px;
+ 
+}
+
+.box2 img{
     width: 50vw;
-    height: 100vh;
+    object-fit: cover;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container2 h1{
+    font-size: 40px;
+    font-weight: 200;
+}
+.container2 img{
+    margin-top: 10px;
+    height: auto;
+    width: 100vw;
 }
