@@ -24,6 +24,11 @@
     top: 12px;
     left: -42px;
 }
+.nav-list ul li a{
+    text-decoration: none;
+    
+}
+
 .login-buttons{
     display: flex;
 }
@@ -31,6 +36,7 @@
 
 
 #login-btn{
+    position: absolute;
     background-color: white;  
     border-style: none;
     font-size: 20px;
@@ -39,14 +45,14 @@
     left: -23px;
    
 }
-#login-btn:hover{
+/* #login-btn:hover{
     background-color: #8b1cf2;
     border-radius: 51px;
     height: 37px;
     width: 6em;
     box-shadow: 4px 6px 14px -6px black;
     color: white;
-}
+} */
 #signup-btn{
     border-style: none;
     background-color: #8b1cf2;
@@ -127,6 +133,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
 
 }
 .container2 h1{
@@ -138,3 +146,4 @@
     height: auto;
     width: 100vw;
 }
+
