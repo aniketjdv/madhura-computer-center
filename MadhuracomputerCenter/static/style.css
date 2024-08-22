@@ -28,13 +28,16 @@
     display: flex;
 }
 
+
+
 #login-btn{
-    background: white;  
+    background-color: white;  
     border-style: none;
     font-size: 20px;
     font-weight: 250;
     position: relative;
     left: -23px;
+   
 }
 #login-btn:hover{
     background-color: #8b1cf2;
@@ -61,3 +64,16 @@
     border-color: white;
 }
 
+.container{
+    display: flex;
+}
+
+.box1{
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+}
+.box2{
+    width: 50vw;
+    height: 100vh;
+}
