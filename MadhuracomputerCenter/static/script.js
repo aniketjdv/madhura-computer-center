@@ -16,3 +16,4 @@ document.getElementById("mscit_banner_indexpage").addEventListener("click",gotom
 function gotomscitpage(){
     window.location.href = "/mscit";
 }
+

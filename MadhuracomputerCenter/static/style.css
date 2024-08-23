@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:Gilroy-Regular, "Noto Sans", sans-serif;
+    
 }
 
 .nav{
@@ -140,11 +141,12 @@
 .container2 h1{
     font-size: 40px;
     font-weight: 200;
+
 }
 .banner-card{
     display: flex;
-    height: 90vh;
-    width: 90vw;
+    height: 70em;
+    width: 70em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -162,3 +164,58 @@
 
 }
 
+#klic_banner_indexpage:hover{
+    cursor: pointer;
+    
+}
+
+#klic_banner_indexpage:hover{
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    #learn-btn{
+        height: 45px;
+        width: 180px;
+    }
+    .nav li{
+        visibility: collapse;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items:center;
+        justify-content:flex-start;
+        padding: 0;
+    }
+
+    #mkcl-logo {
+        /* position: relative;
+        top: -200px; */
+        height: 10em;
+        width: 11em;
+        margin-bottom: 20px;
+        /* left: 110px; */
+      }
+      .box1{
+        margin-top: 10px;
+        width: 100vw;
+        height: 55vh;
+      }
+      .box1 h3 {
+        /* position: relative;
+        top: -200px; */
+        font-size: 13px;
+        font-weight: 250;
+        /* left: 108px; */
+      }
+      .box1 h1{
+        font-size: 20px;
+      }
+      
+}
