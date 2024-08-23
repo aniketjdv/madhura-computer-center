@@ -33,6 +33,10 @@
     color:black;
 }
 
+.nav-list ul li a:hover{
+    color:#5c00b3
+}
+
 .login-buttons{
     display: flex;
 }
@@ -59,7 +63,7 @@
 } */
 #signup-btn{
     border-style: none;
-    background-color: #8b1cf2;
+    background-color: #5c00b3;
     border-radius: 51px;
     height: 37px;
     width: 6em;
@@ -95,9 +99,19 @@
 }
 .box1 h1{
     position: relative;
-    top: -120px;
+    top: -100px;
     font-size: 35px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+
+.box1 h1:hover{
+    color: #5c00b3;
+    
+}
+
 #learn-btn{
     position: relative;
     top:-80px;
