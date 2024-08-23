@@ -1,4 +1,4 @@
-learn_btn=document.getElementById("learn-btn")
+learn_btn=document.getElementById("learn-btn");
 learn_btn.addEventListener("click", learnfn);
 
 function learnfn() {
@@ -7,12 +7,12 @@ function learnfn() {
 }
 
 
-document.getElementById("klic_banner_indexpage").addEventListener("click",gotoklickpage)
+document.getElementById("klic_banner_indexpage").addEventListener("click",gotoklickpage);
 function gotoklickpage(){
     window.location.href = "/klic_course";
 }
 
-document.getElementById("mscit_banner_indexpage").addEventListener("click",gotomscitpage)
+document.getElementById("mscit_banner_indexpage").addEventListener("click",gotomscitpage);
 function gotomscitpage(){
     window.location.href = "/mscit";
 }

@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="nav">
-            <div class="logo">
+            <div class="logo" id="logo">
             Madhura Computer Center
             </div>
             <div class="nav-list">
@@ -30,9 +30,18 @@
             </div>
             {% comment %} login button section end {% endcomment %}
         </div>
+        
     </header>
+    <main>
     {% block body %}
     
     {% endblock body %}
+    </main>
+    <footer>
+        <div class="footer">
+            {% block footer %}This is footer{% endblock footer %}
+        </div>
+    </footer>
+    <script src="{% static 'redirect_page.js' %}"></script>
 </body>
 </html>
