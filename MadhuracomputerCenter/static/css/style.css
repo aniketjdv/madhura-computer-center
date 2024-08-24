@@ -244,5 +244,13 @@
       .box1 h1{
         font-size: 20px;
       }
-      
+      .banner-card{
+        width: 21em;
+        height: 16em;
+        box-shadow: 9px 11px 16px -6px black;
+      }
+      .banner-card img{
+        width: 20em;
+        box-shadow: 5px 8px 8px -6px black;
+      }
 }
