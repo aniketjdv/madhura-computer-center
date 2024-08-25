@@ -11,4 +11,3 @@ class Klic_Course(models.Model):
     image=models.ImageField(upload_to="/klic_course")
     date_added=models.DateTimeField(default=timezone.now)
     type=models.CharField(choices=COURSE_TYPE_CHOICES)
-    desc=models.TextField()

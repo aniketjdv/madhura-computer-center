@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['127.0.0.1','192.168.1.85']
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = ['madhuracomputer',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
