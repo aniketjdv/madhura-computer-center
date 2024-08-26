@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}Default Title{% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    {% block head %}{% endblock head %}
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo" id="logo">
+            Madhura Computer Center
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                   <li><a href="/about">About Us</a></li>
+                </ul>
+            </div>
+            {% comment %} ----- login buttons -----{% endcomment %}
+            <div class="login-buttons">
+                <button id="login-btn">login</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+            {% comment %} login button section end {% endcomment %}
+        </div>
+        
+    </header>
+    <main>
+    {% block body %}
+    
+    {% endblock body %}
+    </main>
+    <footer>
+        <div class="footer">
+            {% block footer %}This is footer{% endblock footer %}
+        </div>
+    </footer>
+    <script src="{% static 'js/redirect_page.js' %}"></script>
+</body>
+</html>
