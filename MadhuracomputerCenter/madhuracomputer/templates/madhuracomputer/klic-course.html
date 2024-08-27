@@ -1,2 +1,22 @@
-{% extends "website/base.html" %}
+{% extends "madhuracomputer/base.html" %}
 {% block title %} KlicCourse {% endblock title %}
+{% block body%}
+
+<div class="klic_container">
+
+{% for kc in klic %}
+<div class="klic-course-content">
+
+<img src="{{kc.image.url}}" alt="">
+<h3>{{kc.name}}</h3>
+<a href="{% url 'detailpage' kc.id %}">
+<button type="button" class="leran-more">More info</button>
+</a>
+<p class="kprice">Price: &#8377; {{kc.price}}</p>
+</div>
+{% endfor %}
+
+
+</div>
+
+{% endblock body%}

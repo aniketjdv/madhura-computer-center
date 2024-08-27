@@ -1,8 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Gilroy-Regular, "Noto Sans", sans-serif;
-    
+    font-family:"Nunito" ,sans-serif ,"Noto Sans";
+    /* Gilroy-Regular */
+    scroll-behavior: smooth;
 }
 
 .nav{
@@ -200,6 +201,49 @@
     padding: 10px;
 }
 
+/* klic course page css */
+.klic_container{
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+.klic-course-content{
+    display: flex;
+    background-color: #e0bfff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 17em;
+    width: 17em;
+    margin: 1em;
+    border-radius: 10px;
+    color: white;
+}
+.klic-course-content img{
+    height: 8em;
+    width: 14em;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 6px 6px 14px -8px black;
+}
+
+.klic-course-content h3{
+    margin-top: 10px;
+}
+
+.klic-course-content button{
+    border: none;
+    background-color: #8a11fc;
+    border-radius: 2em;
+    box-shadow: 6px 6px 14px -8px black;
+    color: white;
+    height: 2em;
+  width: 6em;
+
+}
+.kprice{
+    margin-top: 1em;
+}
 
 /* for mobile screen css */
 @media screen and (max-width:600px) {
