@@ -206,6 +206,7 @@
     display: flex;
     background-color: antiquewhite;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 .klic-course-content{
     display: flex;

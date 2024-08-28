@@ -17,6 +17,32 @@
 {% endfor %}
 
 
+<hr>
+<h3>ac career</h3>
+{% for i in klic %}
+{% if i.type == 'AC' %}
+<div class="klic-course-content">
+
+    <img src="{{i.image.url}}" alt="">
+    <h3>{{i.name}}</h3>
+    <a href="{% url 'detailpage' i.id %}">
+    <button type="button" class="leran-more">More info</button>
+    </a>
+    <p class="kprice">Price: &#8377; {{kc.price}}</p>
+    </div>
+{% endif %} 
+{% endfor %}
+<hr>
+
+<hr>
+<h3>Boc</h3><br>
+{% for i in klic %}
+{% if i.type == 'BOC' %}
+<h6>{{i.name}}</h6><br>
+{% endif %} 
+{% endfor %}
+<hr>
+
 </div>
 
 {% endblock body%}
