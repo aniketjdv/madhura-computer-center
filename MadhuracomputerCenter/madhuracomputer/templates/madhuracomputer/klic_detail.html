@@ -2,10 +2,13 @@
 {% block title %} KlicCourse Detail {% endblock title %}
 {% block body%}
 
-
-<h3>{{klic.name}}</h3>
+<div class="detail_page_box">
+<div class="detail_container">
+<img src="{{klic.image.url}}" alt="{{klic.name}}">
+<h1>{{klic.name}}</h1>
 <p>{{klic.description}}</p>
 
-<a href="/madhuracomputer/klic_course/"><button>GO Back</button></a>
-
+<a href="/madhuracomputer/klic_course/"><button><i class="ri-arrow-left-s-line"></i>Back</button></a>
+</div>
+</div>
 {% endblock body%}

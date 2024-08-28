@@ -3,7 +3,7 @@ learn_btn.addEventListener("click", learnfn);
 
 function learnfn() {
     console.log("OK");
-    window.location.href = "/about";
+    window.location.href = "/madhuracomputer/about";
 }
 
 
