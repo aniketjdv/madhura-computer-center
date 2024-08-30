@@ -2,5 +2,47 @@
 {% block title %}MSCIT{% endblock title %}
 
 {% block body %}
+<div class="mscit-container">
+    <img src="https://mscit.mkcl.org/user/themes/mscit/images/logo-mscit.png" alt="mscitlogo">
+
+
+    {% comment %} silder code {% endcomment %}
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://mscit.mkcl.org/user/pages/01.home/_slider/slide2-1.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://mscit.mkcl.org/user/pages/01.home/_slider/slide2-2.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://mscit.mkcl.org/user/pages/01.home/_slider/slide2-3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+{% comment %} silder code end {% endcomment %}
+
+<div class="mscit-container-2">
+    <div class="mscit-text">
+        <h1>
+            Welcome to MS-CIT
+        </h1>
+        <p>MS-CIT: Maharashtra State Certificate in Information Technology</p>
+        <p>MS-CIT is an Information Technology (IT) literacy course started by MKCL in the year 2001. It is the most popular IT Literacy course in Maharashtra.</p>
+        <p>In 21st Century, most of the new actionable knowledge is being digitally born (often through digital collaborations), digitally stored, digitally presented, digitally distributed, digitally accessed, digitally archived and managed. It only seems natural that it has become an essential part of one’s personal, professional and social life. It has also transformed the way of living in 21st Century</p>
+    </div>
+    <div class="mscit-images">
+        <img src="1.png" alt="mscit">
+    </div>
+</div>
+
+</div>
 
 {% endblock body %}
+
+{% block scriptbk %}
+{% load static %}
+    <script src="{% static 'js/mscit.js' %}"></script>
+{% endblock scriptbk %}

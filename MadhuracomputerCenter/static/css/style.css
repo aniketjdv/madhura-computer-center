@@ -296,6 +296,69 @@
     cursor: pointer;
 }
 
+.mscit-container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* slider css */
+.slider {
+    position: relative;
+    max-width: 100vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/* slider css end */
+
+.mscit-container-2{
+    margin-top: 4vh;
+    display: flex;
+    width: 100vw;
+}
+
+.mscit-text{
+    padding: 1vw;
+    width: 50vw;
+}
+
+
 /* for mobile screen css */
 @media screen and (max-width:600px) {
     .nav{
