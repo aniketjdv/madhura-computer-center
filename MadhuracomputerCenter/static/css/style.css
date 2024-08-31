@@ -1,3 +1,10 @@
+:root{
+    /* teal white color theme */
+    --white-theme1:#F5F5F5;
+    --accent1:#48CFCB;
+    --aceent2:#229799;
+    --accent3:#424242;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +12,7 @@
     /* Gilroy-Regular */
     scroll-behavior: smooth;
 }
+
 
 .nav{
     display: flex;
@@ -35,7 +43,8 @@
 }
 
 .nav-list ul li a:hover{
-    color:#5c00b3
+    /* color:#5c00b3 */
+    color: var(--aceent2);
 }
 
 .login-buttons{
@@ -46,7 +55,7 @@
 
 #login-btn{
     position: absolute;
-    background-color: white;  
+    background-color: white; 
     border-style: none;
     font-size: 20px;
     font-weight: 250;
@@ -64,7 +73,8 @@
 } */
 #signup-btn{
     border-style: none;
-    background-color: #5c00b3;
+    /* background-color: #5c00b3; */
+    background-color:var(--accent1);
     border-radius: 51px;
     height: 37px;
     width: 6em;

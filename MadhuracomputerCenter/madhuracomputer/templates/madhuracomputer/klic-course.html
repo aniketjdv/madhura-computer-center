@@ -2,6 +2,11 @@
 {% block title %} KlicCourse {% endblock title %}
 {% block body%}
 
+<form action="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">OK</button>
+</form>
 <div class="klic_container">
 
 {% for kc in klic %}

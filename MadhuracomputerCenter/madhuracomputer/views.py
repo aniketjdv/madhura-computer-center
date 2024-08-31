@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Klic_Course
 from django.shortcuts import get_object_or_404
+from .forms import Klic_course_form
 
 # Create your views here.
 def home(request):
@@ -14,7 +15,14 @@ def contnct(request):
 
 def klic_course(request):
     klic=Klic_Course.objects.all()
-    return render(request, 'madhuracomputer/klic-course.html',{'klic':klic})
+    course=None;
+    if request.method == 'POST':
+        form=Klic_course_form(request.POST)
+        if form.is_valid():
+            form.cleaned_data['klic_course_type']
+    else:
+        form=Klic_course_form()
+    return render(request, 'madhuracomputer/klic-course.html',{'klic':klic ,'form':form})
 
 def kilc_detail(request, klic_id):
     kcourse=get_object_or_404(Klic_Course,pk=klic_id)
