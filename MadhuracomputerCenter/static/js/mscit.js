@@ -27,3 +27,8 @@ function prevSlide() {
 setInterval(nextSlide, 3000);
 
 // slider js end
+
+function show(){
+    alert("hello");
+    console.log("ok")
+}
