@@ -73,8 +73,8 @@
 } */
 #signup-btn{
     border-style: none;
-    /* background-color: #5c00b3; */
-    background-color:var(--accent1);
+    background-color: #5c00b3;
+    /* background-color:var(--accent1); */
     border-radius: 51px;
     height: 37px;
     width: 6em;
@@ -84,7 +84,7 @@
     font-weight: 250;
 }
 #signup-btn:hover{
-    background-color: #5c00b3;
+    background-color: #250047;
     border-style: solid;
     border-color: white;
 }
@@ -357,6 +357,7 @@
 }
 /* slider css end */
 
+/* mscipt page css */
 .mscit-container-2{
     margin-top: 4vh;
     display: flex;
@@ -366,7 +367,63 @@
 .mscit-text{
     padding: 1vw;
     width: 50vw;
+    background-color:#5c00b3;
+    margin: 1em;
+  border-radius: 4px;
+  box-shadow: 2px 10px 32px 0px #5e5e5e;
 }
+.mscit-text-card{
+    background-color: #fff3ef;
+    margin: 0.5em;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mscit-text-card p{
+    text-align: justify;
+    margin-top: 20px;
+    color: #464646;
+}
+.mscit-text-card:nth-child(3){
+    margin: top 10px;
+    color: #5c00b3;
+}
+.mscit-title::before{
+    content: '';
+    position: absolute;
+    bottom: 198px;
+  left: 51px;
+    width: 113px;
+    height: 6px;
+    border-radius: 2px;
+    background: #5c00b3;
+}
+#mscitlogo{
+    position: absolute;
+  top: 5em;
+  left: 8em;
+  width: 115px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 11px;
+  padding: 10px;
+}
+#mscit_video{
+    margin-top: 15px;
+  background: black;
+  background-color: black;
+  width: 39vw;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px -1px #404040;
+  position: relative;
+  top: 18px;
+  left: 28px;
+}
+
+/* mscit page css end */
 
 
 /* for mobile screen css */
